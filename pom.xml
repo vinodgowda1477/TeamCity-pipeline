@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.tarams.remotelog</groupId>
-  <artifactId>app_config_tool</artifactId>
+  <artifactId>TeamCity-pipeline</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
-  <name>app_config_tool</name>
+  <name>TeamCity-pipeline</name>
   <url>http://maven.apache.org</url>
 
   <build>
