@@ -36,6 +36,10 @@ object Build : BuildType({
 
     publishArtifacts = PublishMode.SUCCESSFUL
 
+    params {
+        param("env.JDK_1_7", """C:\Program Files\Java\jdk-14.0.2\bin""")
+    }
+
     vcs {
         root(DslContext.settingsRoot)
 
