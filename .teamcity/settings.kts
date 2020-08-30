@@ -61,16 +61,16 @@ object Build : BuildType({
     }
 
     steps {
-        maven {
-            goals = "clean test"
-            runnerArgs = "-Dmaven.test.failure.ignore=true"
-            jdkHome = "%env.JDK_1_7%"
-        }
         step {
             name = "scan code"
             type = "sonar-plugin"
             param("target.jdk.home", "%env.JDK_14_0_x64%")
             param("sonarServer", "9f20be28-5cc2-4c58-bb53-ed26f94b8707")
+        }
+        maven {
+            goals = "clean test"
+            runnerArgs = "-Dmaven.test.failure.ignore=true"
+            jdkHome = "%env.JDK_1_7%"
         }
     }
 
