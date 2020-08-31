@@ -34,11 +34,11 @@ project {
         feature {
             id = "PROJECT_EXT_2"
             type = "sonar-qube"
-            param("useToken", "true")
+            param("useToken", "false")
             param("name", "sonarqube")
             param("id", "9f20be28-5cc2-4c58-bb53-ed26f94b8707")
+            param("login", "admin")
             param("url", "http://localhost:9000/")
-            param("token", "scrambled:ODk2Y2I5MmFhMjIzNjYyMjgzY2U2MjI3ZTVlMWUzYWUyMDgxMmQ0Yg==")
         }
     }
 }
