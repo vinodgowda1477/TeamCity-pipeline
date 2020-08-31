@@ -35,11 +35,10 @@ project {
             id = "PROJECT_EXT_2"
             type = "sonar-qube"
             param("useToken", "false")
-            param("password", "scrambled:YWRtaW4=")
+            param("password", "scrambled:KioqKio=")
             param("name", "sonarqube")
             param("id", "9f20be28-5cc2-4c58-bb53-ed26f94b8707")
             param("login", "admin")
-            param("jdbcUsername", "teamcity")
             param("url", "http://localhost:9000/")
         }
     }
