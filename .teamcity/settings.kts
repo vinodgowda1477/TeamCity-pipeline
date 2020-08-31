@@ -67,7 +67,6 @@ object Build : BuildType({
         step {
             name = "scan code"
             type = "sonar-plugin"
-            enabled = false
             param("target.jdk.home", "%env.JDK_14_0_x64%")
             param("sonarServer", "9f20be28-5cc2-4c58-bb53-ed26f94b8707")
         }
