@@ -64,12 +64,6 @@ object Build : BuildType({
         step {
             name = "scan code"
             type = "sonar-plugin"
-            param("jvmArgs", """
-                mvn sonar:sonar \
-                  -Dsonar.projectKey=TeamCityPipeline \
-                  -Dsonar.host.url=http://localhost:9000 \
-                  -Dsonar.login=896cb92aa223662283ce6227e5e1e3ae20812d4b
-            """.trimIndent())
             param("target.jdk.home", "%env.JDK_14_0_x64%")
             param("sonarServer", "9f20be28-5cc2-4c58-bb53-ed26f94b8707")
         }
